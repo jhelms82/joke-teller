@@ -25,7 +25,7 @@ function tellJoke(joke){
 //Get Jokes from Joke API
 async function getJokes(){
     let joke = '';
-    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming,Spooky,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single';
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Spooky,Christmas?type=single';
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
